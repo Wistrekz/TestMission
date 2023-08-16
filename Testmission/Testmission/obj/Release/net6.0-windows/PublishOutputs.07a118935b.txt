@@ -1,0 +1,7 @@
+D:\TestingPublish\Testmission.exe
+D:\TestingPublish\Testmission.dll
+D:\TestingPublish\Testmission.deps.json
+D:\TestingPublish\Testmission.runtimeconfig.json
+D:\TestingPublish\Testmission.pdb
+D:\TestingPublish\Microsoft.Toolkit.Uwp.Notifications.dll
+D:\TestingPublish\Newtonsoft.Json.dll

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Testmission.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Testmission"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="235" Width="820" ResizeMode="NoResize" Loaded="MainwindowLoaded" >
+    <Grid Margin="1,6,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Archiv_Button" Content="Заархивировать" HorizontalAlignment="Left" Margin="684,138,0,0" VerticalAlignment="Top" Height="40" Width="100" Click="Archiv_Button_Click"/>
+        <Label Content="Исходный путь:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="ChoosePath_Button" Content="Выбор папки" HorizontalAlignment="Left" Margin="550,10,0,0" VerticalAlignment="Top" Height="26" Width="80" Click="ChoosePath_Button_Click"/>
+        <TextBox x:Name="StartPath" HorizontalAlignment="Left" Margin="125,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="420" Height="26" Background="#FF8E8E8E"/>
+        <Button x:Name="CopyFiles_Button" Content="Копировать &#10;файлы" HorizontalAlignment="Left" Margin="550,138,0,0" VerticalAlignment="Top" Height="40" Width="90" Click="CopyFiles_Button_Click"/>
+        <ComboBox x:Name="PathsBoxes" HorizontalAlignment="Left" Margin="9,50,0,0" VerticalAlignment="Top" Width="240" Height="27" DropDownClosed="PathsBoxes_DropDownClosed" SelectionChanged="PathsBoxes_SelectionChanged"/>
+        <Button x:Name="SavePath_Button" Content="Сохранить" HorizontalAlignment="Left" Margin="9,91,0,0" VerticalAlignment="Top" Height="27" Width="65" Click="SavePath_Button_Click"/>
+        <Button x:Name="AddPaths_Button" Content="Добавить" HorizontalAlignment="Left" Margin="635,9,0,0" VerticalAlignment="Top" Height="27" Width="80" Click="AddPaths_Button_Click"/>
+        <Button x:Name="DeletePath_Button" Content="Удалить" HorizontalAlignment="Left" Margin="184,91,0,0" VerticalAlignment="Top" Height="27" Width="65" Click="DeletePath_Button_Click"/>
+        <RadioButton x:Name="TxtFilesFilter_RadioButton" Content="Только txt файлы" HorizontalAlignment="Left" Margin="21,163,0,0" VerticalAlignment="Top" Click="TxtFilesFilter_RadioButton_Click"/>
+        <RadioButton x:Name="AllFilesFilter_RadioButton" Content="Все файлы" HorizontalAlignment="Left" Margin="154,163,0,0" VerticalAlignment="Top" ClickMode="Release" IsChecked="True" Click="AllFilesFilter_RadioButton_Click"/>
+        <Label Content="Фильтры для копирования" HorizontalAlignment="Left" Margin="42,123,0,0" VerticalAlignment="Top" Height="26" Width="160"/>
+    </Grid>
+</Window>
